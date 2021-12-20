@@ -1,6 +1,15 @@
 import java.util.Scanner;
 /*
  * Use the scanner to pull in the numbers
+ * 
+ * Created by: Charlie Weber
+ * version 12.20.2021.0.0.1 alpha
+ * This is a representation of my current abilities learned and gained in the class. The lack of working code examples shared from class to github; and restrictions
+ * that blackboard seems to only go back 4 weeks (12 sessions). There are several ways to improve this code.
+ * I've tried to break the class methods section into individual classes and bring back in.
+ * I have a conceptual idea of how to instance the num1/2 to be strings instead of forcing a number and then doing a verification like exampled below to accept regular strings
+ * 
+ * 
  */
 
 
@@ -104,7 +113,7 @@ public class Calc {
 
           
           String operator = sc1.next();
-
+          operator = operator.toLowerCase(); // force operator to always be lowercase
            switch (operator){
              case "a":
                 System.out.println(calc1.num1 + " plus " + calc1.num2 + " equals "+calc1.add(firstNum, secondNum));
